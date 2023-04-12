@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "c862804d-91a1-458a-a3b9-b6a996e53d66",
+		"name": "API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17451670"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"rodrigo.parede@gmail.com\",\r\n    \"senha\" : \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Beneficiarios",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBUEkgT2hhbmFUZWNoIiwic3ViIjoicm9kcmlnby5wYXJlZGVAZ21haWwuY29tIiwiaWF0IjoxNjgxMTc0Mjc0LCJleHAiOjE2ODEyNjA2NzR9.xuDw0vtJ3bSc6rwyApgUz1NC2M8-Ktmr9-GRXy6qMSQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/beneficiarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"beneficiarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Beneficiarios Load",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBUEkgT2hhbmFUZWNoIiwic3ViIjoicm9kcmlnby5wYXJlZGVAZ21haWwuY29tIiwiaWF0IjoxNjgxMTc0Mjc0LCJleHAiOjE2ODEyNjA2NzR9.xuDw0vtJ3bSc6rwyApgUz1NC2M8-Ktmr9-GRXy6qMSQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/beneficiarios/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"beneficiarios",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Beneficiarios Delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBUEkgT2hhbmFUZWNoIiwic3ViIjoicm9kcmlnby5wYXJlZGVAZ21haWwuY29tIiwiaWF0IjoxNjgxMTc0Mjc0LCJleHAiOjE2ODEyNjA2NzR9.xuDw0vtJ3bSc6rwyApgUz1NC2M8-Ktmr9-GRXy6qMSQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/beneficiarios/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"beneficiarios",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Documentos",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBUEkgT2hhbmFUZWNoIiwic3ViIjoicm9kcmlnby5wYXJlZGVAZ21haWwuY29tIiwiaWF0IjoxNjgxMTc0Mjc0LCJleHAiOjE2ODEyNjA2NzR9.xuDw0vtJ3bSc6rwyApgUz1NC2M8-Ktmr9-GRXy6qMSQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/beneficiarios/1/documentos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"beneficiarios",
+						"1",
+						"documentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Beneficiario",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBUEkgT2hhbmFUZWNoIiwic3ViIjoicm9kcmlnby5wYXJlZGVAZ21haWwuY29tIiwiaWF0IjoxNjgxMTc0Mjc0LCJleHAiOjE2ODEyNjA2NzR9.xuDw0vtJ3bSc6rwyApgUz1NC2M8-Ktmr9-GRXy6qMSQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Fulano de Tal 1\",\r\n    \"telefone\": \"(11) 9999-9999\",\r\n    \"dataNascimento\": \"1990-01-01\",\r\n    \"documentos\": [\r\n        {\r\n            \"tipoDocumento\": \"CPF\",\r\n            \"descricao\": \"123.456.789-00\"\r\n        },\r\n        {\r\n            \"tipoDocumento\": \"RG\",\r\n            \"descricao\": \"12.345.678-9\"\r\n        }\r\n    ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/beneficiarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"beneficiarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Beneficiario",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBUEkgT2hhbmFUZWNoIiwic3ViIjoicm9kcmlnby5wYXJlZGVAZ21haWwuY29tIiwiaWF0IjoxNjgxMTc0Mjc0LCJleHAiOjE2ODEyNjA2NzR9.xuDw0vtJ3bSc6rwyApgUz1NC2M8-Ktmr9-GRXy6qMSQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Fulano de Tal 2\",\r\n    \"telefone\": \"(11) 8888-8888\",\r\n    \"dataNascimento\": \"2000-01-01\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/beneficiarios/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"beneficiarios",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
